@@ -351,6 +351,7 @@
 
                      <!-- card produk-->
                      <LinearLayout
+                         android:id="@+id/g4"
                          android:foreground="?android:attr/selectableItemBackground"
                          android:clickable="true"
                          android:padding="4dp"
@@ -365,62 +366,13 @@
                                  app:cardCornerRadius="5dp"
                                  android:layout_width="match_parent"
                                  android:layout_height="wrap_content">
-                                 <ImageView
-                                     android:cropToPadding="false"
-                                     android:adjustViewBounds="true"
-                                     android:src="@drawable/g3"
-                                     android:layout_width="match_parent"
-                                     android:layout_height="wrap_content"/>
-                                 
-                             </androidx.cardview.widget.CardView>
-                         </LinearLayout>
-                         <LinearLayout
-                             android:layout_marginTop="5dp"
-                             android:orientation="vertical"
-                             android:layout_width="match_parent"
-                             android:layout_height="wrap_content">
-                             <TextView
-                                 android:textSize="16dp"
-                                 android:text="Kalenji"
-                                 android:layout_width="match_parent"
-                                 android:layout_height="wrap_content"/>
-                             <TextView
-                                 android:textSize="12dp"
-                                 android:text="Limited Edition"
-                                 android:layout_width="match_parent"
-                                 android:layout_height="wrap_content"/>
-                             <TextView
-                                 android:text="RP. 200.000"
-                                 android:layout_width="match_parent"
-                                 android:layout_height="wrap_content"/>
 
-                         </LinearLayout>
-                     </LinearLayout>
-                     <RelativeLayout
-                         android:layout_width="12dp"
-                         android:layout_height="match_parent"/>
-                     <!-- card produk-->
-                     <LinearLayout
-                         android:foreground="?android:attr/selectableItemBackground"
-                         android:clickable="true"
-                         android:padding="4dp"
-                         android:background="@drawable/card_produk"
-                         android:orientation="vertical"
-                         android:layout_width="140dp"
-                         android:layout_height="wrap_content">
-                         <LinearLayout
-                             android:layout_width="match_parent"
-                             android:layout_height="wrap_content">
-                             <androidx.cardview.widget.CardView
-                                 app:cardCornerRadius="5dp"
-                                 android:layout_width="match_parent"
-                                 android:layout_height="wrap_content">
                                  <ImageView
-                                     android:cropToPadding="false"
-                                     android:adjustViewBounds="true"
-                                     android:src="@drawable/g3"
                                      android:layout_width="match_parent"
-                                     android:layout_height="wrap_content"/>
+                                     android:layout_height="wrap_content"
+                                     android:adjustViewBounds="true"
+                                     android:cropToPadding="false"
+                                     android:src="@drawable/g4" />
 
                              </androidx.cardview.widget.CardView>
                          </LinearLayout>
@@ -451,6 +403,7 @@
                          android:layout_height="match_parent"/>
                      <!-- card produk-->
                      <LinearLayout
+                         android:id="@+id/g11"
                          android:foreground="?android:attr/selectableItemBackground"
                          android:clickable="true"
                          android:padding="4dp"
@@ -465,12 +418,13 @@
                                  app:cardCornerRadius="5dp"
                                  android:layout_width="match_parent"
                                  android:layout_height="wrap_content">
+
                                  <ImageView
-                                     android:cropToPadding="false"
-                                     android:adjustViewBounds="true"
-                                     android:src="@drawable/g3"
                                      android:layout_width="match_parent"
-                                     android:layout_height="wrap_content"/>
+                                     android:layout_height="wrap_content"
+                                     android:adjustViewBounds="true"
+                                     android:cropToPadding="false"
+                                     android:src="@drawable/g11" />
 
                              </androidx.cardview.widget.CardView>
                          </LinearLayout>
@@ -501,6 +455,7 @@
                          android:layout_height="match_parent"/>
                      <!-- card produk-->
                      <LinearLayout
+                         android:id="@+id/g18"
                          android:foreground="?android:attr/selectableItemBackground"
                          android:clickable="true"
                          android:padding="4dp"
@@ -515,12 +470,13 @@
                                  app:cardCornerRadius="5dp"
                                  android:layout_width="match_parent"
                                  android:layout_height="wrap_content">
+
                                  <ImageView
-                                     android:cropToPadding="false"
-                                     android:adjustViewBounds="true"
-                                     android:src="@drawable/g3"
                                      android:layout_width="match_parent"
-                                     android:layout_height="wrap_content"/>
+                                     android:layout_height="wrap_content"
+                                     android:adjustViewBounds="true"
+                                     android:cropToPadding="false"
+                                     android:src="@drawable/g18" />
 
                              </androidx.cardview.widget.CardView>
                          </LinearLayout>
@@ -551,6 +507,7 @@
                          android:layout_height="match_parent"/>
                      <!-- card produk-->
                      <LinearLayout
+                         android:id="@+id/g15"
                          android:foreground="?android:attr/selectableItemBackground"
                          android:clickable="true"
                          android:padding="4dp"
@@ -568,7 +525,7 @@
                                  <ImageView
                                      android:cropToPadding="false"
                                      android:adjustViewBounds="true"
-                                     android:src="@drawable/g3"
+                                     android:src="@drawable/g15"
                                      android:layout_width="match_parent"
                                      android:layout_height="wrap_content"/>
 
@@ -601,6 +558,7 @@
                          android:layout_height="match_parent"/>
                      <!-- card produk-->
                      <LinearLayout
+                         android:id="@+id/g19"
                          android:foreground="?android:attr/selectableItemBackground"
                          android:clickable="true"
                          android:padding="4dp"
@@ -618,7 +576,7 @@
                                  <ImageView
                                      android:cropToPadding="false"
                                      android:adjustViewBounds="true"
-                                     android:src="@drawable/g3"
+                                     android:src="@drawable/g19"
                                      android:layout_width="match_parent"
                                      android:layout_height="wrap_content"/>
 
@@ -810,9 +768,7 @@
                     </LinearLayout>
 
 
-
                 </LinearLayout>
-
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
@@ -1115,18 +1071,9 @@
 
 
                         </LinearLayout>
-
-
-
-
                     </LinearLayout>
-
-
-
                 </LinearLayout>
-
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
     <com.google.android.material.bottomnavigation.BottomNavigationView
