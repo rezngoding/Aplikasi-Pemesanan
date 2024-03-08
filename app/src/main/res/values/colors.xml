@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6a097d</color>
-    <color name="colorPrimaryDark">#6a097d</color>
-    <color name="colorAccent">#03DAC5</color>
-    <color name="putih">#ffffff</color>
+    <color name="orange">#FF9800</color>
+    <color name="Red">#Ff0000</color>
+    <color name="Green">#008000</color>
+    <color name="Purple">#800080</color>
+    <color name="White">#Ffffff</color>
+    <color name="Black">#000000</color>
+
+
 </resources>
