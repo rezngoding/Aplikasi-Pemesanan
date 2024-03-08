@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:background="#EFEFEF"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".IntroActivity">
     <!--navigasi bar-->
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
+        android:background="@color/orange">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,7 +22,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nike Store"
-                android:textColor="@color/putih"
+                android:textColor="@color/White"
                 android:textSize="19dp"
                 android:textStyle="bold" />
 
@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:backgroundTint="@color/putih"
+                android:backgroundTint="@color/White"
                 android:drawableStart="@drawable/ic_cari"
                 android:gravity="left|center_vertical"
                 android:text="search"
@@ -46,18 +46,12 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="37dp"
-                android:layout_height="37dp"
+                android:layout_height="34dp"
                 android:layout_gravity="center_vertical"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="5dp" />
 
-                <Button
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/ic_favorite" />
-            </androidx.cardview.widget.CardView>
 
             <RelativeLayout
                 android:layout_width="15dp"
@@ -81,10 +75,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:background="@drawable/header" />
+                android:background="@color/orange" />
+
             <!--splash-->
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -115,7 +108,6 @@
                             android:src="@drawable/g2" />
 
                     </androidx.cardview.widget.CardView>
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -152,11 +144,13 @@
                         android:backgroundTint="#565656"
                         android:text="ambil promo"
                         android:textAllCaps="false"
-                        android:textColor="@color/putih" />
+                        android:textColor="@color/White" />
 
 
                 </LinearLayout>
             </LinearLayout>
+
+            <!--menu-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -194,6 +188,7 @@
                         android:text="kategori"
                         android:textAlignment="center"
                         android:textSize="12dp" />
+
                 </LinearLayout>
 
                 <RelativeLayout
@@ -231,6 +226,7 @@
                         android:text="promo"
                         android:textAlignment="center"
                         android:textSize="12dp" />
+
                 </LinearLayout>
 
                 <RelativeLayout
@@ -268,6 +264,7 @@
                         android:text="diskon"
                         android:textAlignment="center"
                         android:textSize="12dp" />
+
                 </LinearLayout>
 
                 <RelativeLayout
@@ -302,18 +299,839 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="membandingkan"
+                        android:text="perbandingan"
                         android:textAlignment="center"
                         android:textSize="12dp" />
 
 
                 </LinearLayout>
             </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+         <LinearLayout
+             android:paddingBottom="10dp"
+             android:padding="15dp"
+             android:background="@drawable/background_khusus"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <!--tiitle swipe-->
+             <LinearLayout
+                 android:layout_marginLeft="15dp"
+                 android:layout_marginRight="15dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:textColor="@color/White"
+                     android:layout_weight="1"
+                     android:textStyle="bold"
+                     android:textSize="20dp"
+                     android:text="Produk Terbaru"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+                 <Button
+                     android:textAllCaps="false"
+                     android:textColor="@color/White"
+                     android:backgroundTint="@color/orange"
+                     android:text="View All"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"/>
+
+             </LinearLayout>
+             <HorizontalScrollView
+                 android:paddingLeft="10dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <LinearLayout
+                     android:orientation="horizontal"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <!-- card produk-->
+                     <LinearLayout
+                         android:foreground="?android:attr/selectableItemBackground"
+                         android:clickable="true"
+                         android:padding="4dp"
+                         android:background="@drawable/card_produk"
+                         android:orientation="vertical"
+                         android:layout_width="140dp"
+                         android:layout_height="wrap_content">
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+                             <androidx.cardview.widget.CardView
+                                 app:cardCornerRadius="5dp"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content">
+                                 <ImageView
+                                     android:cropToPadding="false"
+                                     android:adjustViewBounds="true"
+                                     android:src="@drawable/g3"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"/>
+                                 
+                             </androidx.cardview.widget.CardView>
+                         </LinearLayout>
+                         <LinearLayout
+                             android:layout_marginTop="5dp"
+                             android:orientation="vertical"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+                             <TextView
+                                 android:textSize="16dp"
+                                 android:text="Kalenji"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+                             <TextView
+                                 android:textSize="12dp"
+                                 android:text="Limited Edition"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+                             <TextView
+                                 android:text="RP. 200.000"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+
+                         </LinearLayout>
+                     </LinearLayout>
+                     <RelativeLayout
+                         android:layout_width="12dp"
+                         android:layout_height="match_parent"/>
+                     <!-- card produk-->
+                     <LinearLayout
+                         android:foreground="?android:attr/selectableItemBackground"
+                         android:clickable="true"
+                         android:padding="4dp"
+                         android:background="@drawable/card_produk"
+                         android:orientation="vertical"
+                         android:layout_width="140dp"
+                         android:layout_height="wrap_content">
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+                             <androidx.cardview.widget.CardView
+                                 app:cardCornerRadius="5dp"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content">
+                                 <ImageView
+                                     android:cropToPadding="false"
+                                     android:adjustViewBounds="true"
+                                     android:src="@drawable/g3"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"/>
+
+                             </androidx.cardview.widget.CardView>
+                         </LinearLayout>
+                         <LinearLayout
+                             android:layout_marginTop="5dp"
+                             android:orientation="vertical"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+                             <TextView
+                                 android:textSize="16dp"
+                                 android:text="Kalenji"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+                             <TextView
+                                 android:textSize="12dp"
+                                 android:text="Limited Edition"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+                             <TextView
+                                 android:text="RP. 200.000"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+
+                         </LinearLayout>
+                     </LinearLayout>
+                     <RelativeLayout
+                         android:layout_width="12dp"
+                         android:layout_height="match_parent"/>
+                     <!-- card produk-->
+                     <LinearLayout
+                         android:foreground="?android:attr/selectableItemBackground"
+                         android:clickable="true"
+                         android:padding="4dp"
+                         android:background="@drawable/card_produk"
+                         android:orientation="vertical"
+                         android:layout_width="140dp"
+                         android:layout_height="wrap_content">
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+                             <androidx.cardview.widget.CardView
+                                 app:cardCornerRadius="5dp"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content">
+                                 <ImageView
+                                     android:cropToPadding="false"
+                                     android:adjustViewBounds="true"
+                                     android:src="@drawable/g3"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"/>
+
+                             </androidx.cardview.widget.CardView>
+                         </LinearLayout>
+                         <LinearLayout
+                             android:layout_marginTop="5dp"
+                             android:orientation="vertical"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+                             <TextView
+                                 android:textSize="16dp"
+                                 android:text="Kalenji"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+                             <TextView
+                                 android:textSize="12dp"
+                                 android:text="Limited Edition"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+                             <TextView
+                                 android:text="RP. 200.000"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+
+                         </LinearLayout>
+                     </LinearLayout>
+                     <RelativeLayout
+                         android:layout_width="12dp"
+                         android:layout_height="match_parent"/>
+                     <!-- card produk-->
+                     <LinearLayout
+                         android:foreground="?android:attr/selectableItemBackground"
+                         android:clickable="true"
+                         android:padding="4dp"
+                         android:background="@drawable/card_produk"
+                         android:orientation="vertical"
+                         android:layout_width="140dp"
+                         android:layout_height="wrap_content">
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+                             <androidx.cardview.widget.CardView
+                                 app:cardCornerRadius="5dp"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content">
+                                 <ImageView
+                                     android:cropToPadding="false"
+                                     android:adjustViewBounds="true"
+                                     android:src="@drawable/g3"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"/>
+
+                             </androidx.cardview.widget.CardView>
+                         </LinearLayout>
+                         <LinearLayout
+                             android:layout_marginTop="5dp"
+                             android:orientation="vertical"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+                             <TextView
+                                 android:textSize="16dp"
+                                 android:text="Kalenji"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+                             <TextView
+                                 android:textSize="12dp"
+                                 android:text="Limited Edition"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+                             <TextView
+                                 android:text="RP. 200.000"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+
+                         </LinearLayout>
+                     </LinearLayout>
+                     <RelativeLayout
+                         android:layout_width="12dp"
+                         android:layout_height="match_parent"/>
+                     <!-- card produk-->
+                     <LinearLayout
+                         android:foreground="?android:attr/selectableItemBackground"
+                         android:clickable="true"
+                         android:padding="4dp"
+                         android:background="@drawable/card_produk"
+                         android:orientation="vertical"
+                         android:layout_width="140dp"
+                         android:layout_height="wrap_content">
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+                             <androidx.cardview.widget.CardView
+                                 app:cardCornerRadius="5dp"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content">
+                                 <ImageView
+                                     android:cropToPadding="false"
+                                     android:adjustViewBounds="true"
+                                     android:src="@drawable/g3"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"/>
+
+                             </androidx.cardview.widget.CardView>
+                         </LinearLayout>
+                         <LinearLayout
+                             android:layout_marginTop="5dp"
+                             android:orientation="vertical"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+                             <TextView
+                                 android:textSize="16dp"
+                                 android:text="Kalenji"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+                             <TextView
+                                 android:textSize="12dp"
+                                 android:text="Limited Edition"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+                             <TextView
+                                 android:text="RP. 200.000"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+
+                         </LinearLayout>
+                     </LinearLayout>
+                     <RelativeLayout
+                         android:layout_width="12dp"
+                         android:layout_height="match_parent"/>
+                     <!-- card produk-->
+                     <LinearLayout
+                         android:foreground="?android:attr/selectableItemBackground"
+                         android:clickable="true"
+                         android:padding="4dp"
+                         android:background="@drawable/card_produk"
+                         android:orientation="vertical"
+                         android:layout_width="140dp"
+                         android:layout_height="wrap_content">
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+                             <androidx.cardview.widget.CardView
+                                 app:cardCornerRadius="5dp"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content">
+                                 <ImageView
+                                     android:cropToPadding="false"
+                                     android:adjustViewBounds="true"
+                                     android:src="@drawable/g3"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"/>
+
+                             </androidx.cardview.widget.CardView>
+                         </LinearLayout>
+                         <LinearLayout
+                             android:layout_marginTop="5dp"
+                             android:orientation="vertical"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+                             <TextView
+                                 android:textSize="16dp"
+                                 android:text="Kalenji"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+                             <TextView
+                                 android:textSize="12dp"
+                                 android:text="Limited Edition"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+                             <TextView
+                                 android:text="RP. 200.000"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"/>
+
+                         </LinearLayout>
+                     </LinearLayout>
+                 </LinearLayout>
+             </HorizontalScrollView>
+         </LinearLayout>
+
+            <!--Produk Lainnya-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--card produk-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- Produk Lainnya-->
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!--card produk-->
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/card_produk"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:cardCornerRadius="5dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:adjustViewBounds="true"
+                                            android:cropToPadding="false"
+                                            android:src="@drawable/g3" />
+
+                                    </androidx.cardview.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Kalenji"
+                                        android:textSize="16dp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Limited Edition"
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="RP. 200.000" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+                        <!--card produk-->
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/card_produk"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:cardCornerRadius="5dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:adjustViewBounds="true"
+                                            android:cropToPadding="false"
+                                            android:src="@drawable/g3" />
+
+                                    </androidx.cardview.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Kalenji"
+                                        android:textSize="16dp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Limited Edition"
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="RP. 200.000" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--card produk-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- Produk Lainnya-->
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!--card produk-->
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/card_produk"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:cardCornerRadius="5dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:adjustViewBounds="true"
+                                            android:cropToPadding="false"
+                                            android:src="@drawable/g3" />
+
+                                    </androidx.cardview.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Kalenji"
+                                        android:textSize="16dp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Limited Edition"
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="RP. 200.000" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+                        <!--card produk-->
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/card_produk"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:cardCornerRadius="5dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:adjustViewBounds="true"
+                                            android:cropToPadding="false"
+                                            android:src="@drawable/g3" />
+
+                                    </androidx.cardview.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Kalenji"
+                                        android:textSize="16dp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Limited Edition"
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="RP. 200.000" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--card produk-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- Produk Lainnya-->
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!--card produk-->
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:id="@+id/sepatu"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:padding="4dp"
+                                android:background="@drawable/card_produk"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <androidx.cardview.widget.CardView
+                                        app:cardCornerRadius="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <ImageView
+                                            android:cropToPadding="false"
+                                            android:adjustViewBounds="true"
+                                            android:src="@drawable/g3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"/>
+
+                                    </androidx.cardview.widget.CardView>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:textSize="16dp"
+                                        android:text="Kalenji"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:textSize="12dp"
+                                        android:text="Limited Edition"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:text="RP. 200.000"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+                        <!--card produk-->
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:id="@+id/sepatu2"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:padding="4dp"
+                                android:background="@drawable/card_produk"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <androidx.cardview.widget.CardView
+                                        app:cardCornerRadius="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <ImageView
+                                            android:cropToPadding="false"
+                                            android:adjustViewBounds="true"
+                                            android:src="@drawable/g3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"/>
+
+                                    </androidx.cardview.widget.CardView>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:textSize="16dp"
+                                        android:text="Kalenji"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:textSize="12dp"
+                                        android:text="Limited Edition"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:text="RP. 200.000"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         app:menu="@menu/item_bottom_navigasi"
-        android:background="@color/putih"
+        android:background="@color/White"
         android:layout_width="match_parent"
-        android:layout_height="55dp"/>
+        android:layout_height="60dp"/>
 </LinearLayout>
